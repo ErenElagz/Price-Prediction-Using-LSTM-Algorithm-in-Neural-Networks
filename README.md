@@ -1,39 +1,46 @@
-# Crypto Coin Price Prediction Using Long-Short-Term-Model Algorithm in Neural Networks
+# Stock Price Prediction Using LSTM Neural Networks
 
-## Developers
-- 214210050 Furkan Demircan
-- 214210056 Eray Elagoz
+This repository provides a comprehensive guide and implementation of a stock price prediction model utilizing Long Short-Term Memory (LSTM) neural networks. LSTMs are a type of recurrent neural network (RNN) adept at capturing temporal dependencies in sequential data, making them particularly effective for time series forecasting tasks such as stock price prediction.
 
-## Objective
-This project aims to leverage machine learning and deep learning techniques to develop an accurate and reliable model for predicting and forecasting Ethereum prices. By utilizing historical data and relevant features, the model provides insights into potential future trends of Ethereum, assisting investors, traders, and researchers in making informed decisions in the cryptocurrency market.
+## Project Overview
 
-## Libraries
-- numpy
-- pandas
-- matplotlib
-- yfinance
-- datetime
-- sklearn
-- tensorflow
+Predicting stock prices is a complex challenge due to the volatile and stochastic nature of financial markets. This project aims to leverage the capabilities of LSTM networks to model and forecast stock prices by learning from historical data. The implementation includes data preprocessing, model construction, training, evaluation, and visualization of the predicted versus actual stock prices.
+
+## Features
+
+- **Data Preprocessing**: Loading and preparing historical stock price data for modeling.
+- **Model Architecture**: Building and training an LSTM network tailored for stock price prediction.
+- **Evaluation**: Assessing the model's performance using appropriate metrics.
+- **Visualization**: Plotting actual versus predicted stock prices to visualize the model's accuracy.
 
 ## Installation
-To install the required libraries, run:
-```sh
-pip install -r requirements.txt
+
+To run this project, ensure you have the following dependencies installed:
+
+- Python 3.x
+- TensorFlow
+- Keras
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+You can install the required packages using pip:
+
+```bash
+pip install tensorflow keras pandas numpy matplotlib scikit-learn
+
+git clone https://github.com/ErenElagz/Price-Prediction-Using-LSTM-Algorithm-in-Neural-Networks.git
+cd Price-Prediction-Using-LSTM-Algorithm-in-Neural-Networks
 ```
 
-## Usage
-1. **Fetch Ethereum Data**: The data is fetched using the `yfinance` library.
-2. **Data Preprocessing**: The data is scaled and prepared for the LSTM model.
-3. **Model Training**: An LSTM model is trained on the preprocessed data.
-4. **Prediction**: The model predicts future Ethereum prices.
-5. **Evaluation**: The model's performance is evaluated using various metrics.
 
-## Example
-To run the notebook, open `index.ipynb` in Jupyter Notebook or Jupyter Lab and execute the cells step by step.
+### Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements or features.
 
-## Results
-The results include plots of actual vs predicted prices, and evaluation metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE).
-
-## License
+### License
 This project is licensed under the MIT License.
+
+### Note
+This project is intended for educational purposes and should not be used as financial advice. Always conduct thorough research or consult financial experts before making investment decisions.
+
